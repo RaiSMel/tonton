@@ -1,0 +1,12 @@
+.conato__imagem{
+    position: fixed;
+    bottom: 7vh;
+    left: .3vw;
+    width: 60px;
+    filter: drop-shadow(1px 1px 1px black);
+    transition: .3s all ease-in-out;
+}
+
+.conato__imagem:hover{
+    transform: scale(1.1);
+}

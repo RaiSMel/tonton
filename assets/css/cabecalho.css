@@ -1,0 +1,58 @@
+.cabecalho{
+    padding: 1rem 4rem;
+    background: #1a1a1a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    column-gap: 10px;
+    box-shadow: 6px 6px 1px 20px #a1a1a1  ;
+}
+
+.cabecalho__principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo__img{
+    height: 70px;
+}
+
+.pesquisar{
+    background-color: #f1f1f1;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem .6rem;
+}
+.pesquisar__entrada{
+    width: 92%;
+    height: 90%;
+}
+
+.pesquisar__entrada, .pesquisar__botao{
+    outline: none;
+    border: none;
+    background-color: #f1f1f1;
+    transition: .5s ease-in-out ;
+}
+
+.pesquisar__botao:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.menu{
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 10px;
+}
+
+.itens-link{
+    color: white;
+    font-size: 1rem;
+}

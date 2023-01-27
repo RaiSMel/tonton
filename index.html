@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonton | Aluguel de Brinquedos</title>
+    <link rel="shortcut icon" href="./assets/imagems/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:ital,wght@0,300;0,500;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/modals.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/produtos.css">
+
+</head>
+
+<body>
+
+    <a class="modal__whatsapp"
+        href="https://api.whatsapp.com/send?phone=5511947428167&text=Olá,%20gostaria%20de%20um%20orçamento...!">
+        <h1>
+            <img src="./assets/imagems/whatsapp.png" alt="" class="conato__imagem">
+        </h1>
+    </a>
+
+   
+
+    <header class="cabecalho">
+        <div class="cabecalho__principal">
+            <a href="#" class="logo__link"><img src="./assets/imagems/logo.png" alt="logo Tonton" class="logo__img"></a>
+            <div class="pesquisar">
+                <input class="pesquisar__entrada" placeholder="Pesquisar brinquedos" maxlength="40">
+                <button class="pesquisar__botao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="menu">
+
+                <li class="menu__itens"><a href="" class="itens-link">Catálago Completo</a></li>
+
+                <li class="menu__itens"><a href="" class="itens-link">Mais Pedidos</a></li>
+
+                <li class="menu__itens"><a href="" class="itens-link">Filtrar</a></li>
+
+
+            </ul>
+
+        </nav>
+        <a href="#" class="itens-link usuario"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg></a>
+    </header>
+    <main class="conteudo">
+
+        <div class="banner">
+        </div>
+        <div class="modal__brinquedo">
+            <div class="brinquedo__info">
+    
+            </div>
+        </div>
+        <div class="produtos">
+
+            <h2 class="subtitulo">Brinquedos para o verão</h2>
+            
+            <div class="carroseul__Container">
+
+                <button class="proximo-item proximo-esquerda"> < </button>
+                <button class="proximo-item proximo-direita">></button>
+
+                <div class="brinquedos">
+
+                    <div class="brinquedo">
+                        <img src="./assets/imagems/piscinaEsc.png" alt="" class="brinquedo__img">
+                        <h3 class="brinquedo__titulo">a</h3>
+                        <p class="brinquedo__caracteristica">
+                            3,20m Comprimento<br>
+                            2,50m Largura<br>
+                            2,00m Altura
+                        </p>
+                        <div class="brinquedo__container">
+                            <p class="brinquedo__preco">R$ 240,00</p>
+                            <button class="brinquedo__botao" onclick="colocarCarrinhoBrinquedo()"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="brinquedo">
+                        <img src="./assets/imagems/piscinaEsc.png" alt="" class="brinquedo__img">
+                        <h3 class="brinquedo__titulo">Piscina Escorrega</h3>
+                        <p class="brinquedo__caracteristica">
+                            3,20m Comprimento<br>
+                            2,50m Largura<br>
+                            2,00m Altura
+                        </p>
+                        <div class="brinquedo__container">
+                            <p class="brinquedo__preco">R$ 240,00</p>
+                            <button class="brinquedo__botao" onclick="colocarCarrinhoBrinquedo()"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="brinquedo">
+                        <img src="./assets/imagems/piscinaEsc.png" alt="" class="brinquedo__img">
+                        <h3 class="brinquedo__titulo">Piscina Escorrega</h3>
+                        <p class="brinquedo__caracteristica">
+                            3,20m Comprimento<br>
+                            2,50m Largura<br>
+                            2,00m Altura
+                        </p>
+                        <div class="brinquedo__container">
+                            <p class="brinquedo__preco">R$ 240,00</p>
+                            <button class="brinquedo__botao" onclick="colocarCarrinhoBrinquedo()"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="brinquedo">
+                        <img src="./assets/imagems/piscinaEsc.png" alt="" class="brinquedo__img">
+                        <h3 class="brinquedo__titulo">Piscina Escorrega</h3>
+                        <p class="brinquedo__caracteristica">
+                            3,20m Comprimento<br>
+                            2,50m Largura<br>
+                            2,00m Altura
+                        </p>
+                        <div class="brinquedo__container">
+                            <p class="brinquedo__preco">R$ 240,00</p>
+                            <button class="brinquedo__botao" onclick="colocarCarrinhoBrinquedo()"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="brinquedo">
+                        <img src="./assets/imagems/piscinaEsc.png" alt="" class="brinquedo__img">
+                        <h3 class="brinquedo__titulo">Piscina Escorrega</h3>
+                        <p class="brinquedo__caracteristica">
+                            3,20m Comprimento<br>
+                            2,50m Largura<br>
+                            2,00m Altura
+                        </p>
+                        <div class="brinquedo__container">
+                            <p class="brinquedo__preco">R$ 240,00</p>
+                            <button class="brinquedo__botao" onclick="colocarCarrinhoBrinquedo()"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="brinquedo">
+                        <img src="./assets/imagems/piscinaEsc.png" alt="" class="brinquedo__img">
+                        <h3 class="brinquedo__titulo">Piscina Escorrega</h3>
+                        <p class="brinquedo__caracteristica">
+                            3,20m Comprimento<br>
+                            2,50m Largura<br>
+                            2,00m Altura
+                        </p>
+                        <div class="brinquedo__container">
+                            <p class="brinquedo__preco">R$ 240,00</p>
+                            <button class="brinquedo__botao" onclick="colocarCarrinhoBrinquedo()"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="brinquedo">
+                        <img src="./assets/imagems/piscinaEsc.png" alt="" class="brinquedo__img">
+                        <h3 class="brinquedo__titulo">Piscina Escorrega</h3>
+                        <p class="brinquedo__caracteristica">
+                            3,20m Comprimento<br>
+                            2,50m Largura<br>
+                            2,00m Altura
+                        </p>
+                        <div class="brinquedo__container">
+                            <p class="brinquedo__preco">R$ 240,00</p>
+                            <button class="brinquedo__botao" onclick="colocarCarrinhoBrinquedo()"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg></button>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+
+        <div href="" class="promocao-redirecionar">
+            <img class="promocao-redirecionar__imagem" src="./assets/imagems/promocoes.png" alt="">
+            <img class="promocao-redirecionar__imagem" src="./assets/imagems/promocoes.png" alt="">
+        </div>
+    </main>
+
+    
+    <script src="./assets/javascript/main.js"></script>
+
+</body>
+
+</html>

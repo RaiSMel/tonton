@@ -1,0 +1,17 @@
+.banner{
+    background-image: url('../imagems/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+.banner__container{
+    background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    width: 80vw;
+}
