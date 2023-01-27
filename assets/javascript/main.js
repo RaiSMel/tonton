@@ -7,8 +7,7 @@ const modalBrinquedo = document.querySelector('.modal__brinquedo');
 
 brinquedos.forEach( brinquedo => {
     brinquedo.addEventListener('click' ,(event) => {
-        var selecionado = null;
-        let verificador = false;
+        let selecionado = null;
 
         if(event.target.parentElement.classList[0] == 'brinquedos'){
             selecionado = event.target
@@ -22,14 +21,19 @@ brinquedos.forEach( brinquedo => {
 
         modalBrinquedo.classList.add('aberto')
         document.documentElement.style.overflow = 'hidden'
-        console.log(selecionado.children[0].alt)
 
+        brinquedos.forEach(item => {
+            item.classList.remove('brinquedo-selecionado')
+        })
+        brinquedo.classList.add('brinquedo-selecionado')
+        
     })
 })
-
 modalBrinquedo.addEventListener('click', () =>{
     modalBrinquedo.classList.remove('aberto')
-    document.documentElement.style.overflow = 'visible'
+    document.documentElement.style.overflow = 'visible';
+
+
 })
 
 
@@ -38,7 +42,6 @@ modalBrinquedo.addEventListener('click', () =>{
 // variaveis a serem utilizadas
 
 const proximo = document.querySelectorAll('.proximo-item');
-const container = document.querySelector('.brinquedos');
 var itemAtual = 0;
 
 // metodo para fazer a transição entre os itens
@@ -60,11 +63,17 @@ proximo.forEach((proximo) => {
         if(itemAtual > brinquedos.length -1){
             itemAtual = 0;
         }
- 
+        
+        brinquedos.forEach(brinquedo => {
+            brinquedo.classList.remove('brinquedo-selecionado')
+        })
+
         brinquedos[itemAtual].scrollIntoView({
             inline: "center",
             behavior : "smooth",
         })
+
+        brinquedos[itemAtual].classList.add('brinquedo-selecionado')
 
     })
 })

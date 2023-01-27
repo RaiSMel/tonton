@@ -76,6 +76,11 @@
     box-shadow: 1px 2px 12px #00000033;
     margin-left: 28px;
     cursor: pointer;
+    opacity: 0.8;
+}
+
+.brinquedo-selecionado{
+    opacity: 1;
 }
 
 .brinquedo:first-child {
@@ -150,11 +155,6 @@
     justify-content: center;
     align-items: center;
 }
-
-.modal__brinquedo.aberto .brinquedo__container{
-display: none;
-}
-
 
 .brinquedo__info{
     background-color: #f1f1f1 ;
