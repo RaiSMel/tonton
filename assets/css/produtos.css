@@ -151,7 +151,6 @@
     align-items: center;
 }
 
-/* teste*/
 .modal__brinquedo.aberto .brinquedo__container{
 display: none;
 }
