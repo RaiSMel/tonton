@@ -5,6 +5,7 @@
     width: 60px;
     filter: drop-shadow(1px 1px 1px black);
     transition: .3s all ease-in-out;
+    z-index: 2;
 }
 
 .conato__imagem:hover{

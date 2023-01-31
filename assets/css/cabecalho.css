@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: end;
     column-gap: 10px;
-    box-shadow: 6px 6px 1px 20px #a1a1a1  ;
+    box-shadow: 6px 6px 10px 1px #a1a1a1  ;
 }
 
 .cabecalho__principal {

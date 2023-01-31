@@ -27,6 +27,8 @@ brinquedos.forEach( brinquedo => {
         })
         brinquedo.classList.add('brinquedo-selecionado')
         
+        console.log(brinquedos.length)
+
     })
 })
 modalBrinquedo.addEventListener('click', () =>{
@@ -69,6 +71,7 @@ proximo.forEach((proximo) => {
         })
 
         brinquedos[itemAtual].scrollIntoView({
+            block: 'nearest',
             inline: "center",
             behavior : "smooth",
         })
