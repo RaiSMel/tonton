@@ -1,0 +1,50 @@
+.rodape{
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 50px 5%;
+    display: grid;
+}
+
+.text-gray{
+    color: #ccc;
+}
+
+.sobre{
+    display: flex;
+    margin: 0 auto;
+    column-gap: 5%;
+}
+
+.sobre-descricao{
+    width: 35%;
+}
+
+.informacoes{
+    justify-self: center;
+    margin: 5rem 2rem;
+    margin-bottom: 0;
+}
+
+.mapa{
+    width: 60%;
+}
+
+.informacoes-titulos{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contato{
+    margin-right: 20px;
+    display: inline; 
+}
+
+.contatos-link{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.contatos-link:hover{
+    text-decoration: underline 1px solid #ccc;
+}

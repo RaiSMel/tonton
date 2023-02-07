@@ -1,82 +1,54 @@
+import  { criarSessao, criarContainer } from './criarProdutos.js';
+
+
+
+
+
+const containerCarroseul = document.querySelector('.produtos__container');
+
+containerCarroseul.appendChild(criarContainer([{
+    'nome': 'brinquedo',
+    'imgSrc': './assets/imagems/piscinaEsc.png',
+    'descricao': 'Piscina Inflável com escorregador para piscina de bolinhas',
+    'comprimento': '2.30m',
+    'largura': '2.00m',
+    'altura': '2.00m',
+    'valor': '240',
+    'id': 1,
+}]))
+
+criarSessao()
+
 
 // CRIANDO UM MODAL DE CADA ITEM QUE É ABERTO
 
+// Carrosel para brinquedos
 
 const brinquedos = document.querySelectorAll('.brinquedo');
 const modalBrinquedo = document.querySelector('.modal__brinquedo');
+const brinquedosVerao = document.querySelectorAll('.brinquedo-destaque');
 
-brinquedos.forEach( brinquedo => {
-    brinquedo.addEventListener('click' ,(event) => {
-        let selecionado = null;
 
-        if(event.target.parentElement.classList[0] == 'brinquedos'){
-            selecionado = event.target
-        }
-        else if(event.target.parentElement.classList[0] == 'brinquedo__container') {
-            selecionado = event.target.parentElement.parentElement
-        }
-        else{
-            selecionado = event.target.parentElement
-        }
-
-        modalBrinquedo.classList.add('aberto')
-        document.documentElement.style.overflow = 'hidden'
-
-        brinquedos.forEach(item => {
-            item.classList.remove('brinquedo-selecionado')
-        })
-        brinquedo.classList.add('brinquedo-selecionado')
-        
-        console.log(brinquedos.length)
-
-    })
-})
-modalBrinquedo.addEventListener('click', () =>{
+modalBrinquedo.addEventListener('click', () => {
     modalBrinquedo.classList.remove('aberto')
     document.documentElement.style.overflow = 'visible';
 
-
 })
 
 
-// Carrosel para brinquedos do verão
+// Carrosel para brinquedos
 
 // variaveis a serem utilizadas
 
-const proximo = document.querySelectorAll('.proximo-item');
 var itemAtual = 0;
 
 // metodo para fazer a transição entre os itens
 
-proximo.forEach((proximo) => {
-    proximo.addEventListener('click', (evento) =>{
 
-        let direcao = evento.target.classList.contains('proximo-esquerda');
 
-        if(direcao){
-            itemAtual = itemAtual - 1;
-        }else{
-            itemAtual = itemAtual + 1;
-        }
 
-        if( itemAtual < 0  ){
-            itemAtual = brinquedos.length -1 ;
-        }
-        if(itemAtual > brinquedos.length -1){
-            itemAtual = 0;
-        }
-        
-        brinquedos.forEach(brinquedo => {
-            brinquedo.classList.remove('brinquedo-selecionado')
-        })
 
-        brinquedos[itemAtual].scrollIntoView({
-            block: 'nearest',
-            inline: "center",
-            behavior : "smooth",
-        })
 
-        brinquedos[itemAtual].classList.add('brinquedo-selecionado')
 
-    })
-})
+
+

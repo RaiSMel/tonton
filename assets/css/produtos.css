@@ -1,21 +1,40 @@
 
 
 .produtos {
-    width: 90%;
-    margin: 0 auto 2rem auto;
+    width: 90vw;
+    margin: 2rem auto;
     font-family: 'Roboto', sans-serif;
 }
 
-.carroseul__Container{
+.carroseul__container{
     position: relative;
-    width: 100%;
-    margin: 0 auto;
+    width: 100%;   
+    margin: auto;
+}
+.produtos__container{
+    margin: auto;
+    width: 95%;
+    overflow: auto;
+}
+
+.produtos__container::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+
+.produtos__container::-webkit-scrollbar {
+    height: 0;
+    background: #414141;
+    color: white;
+    border-radius: 10px;
+    background-size: calc(200% + 4rem);
 }
 
 .proximo-item{
     position: absolute;
-    top: 30px;
-    height: 315px;
+    top: 25px;
+    height: 308px;
     width: 30px;
     font-size: large;
     font-weight: bold;
@@ -36,32 +55,17 @@
 
 
 .proximo-direita{
-    right: 0;
+    right: -1px;
     background: linear-gradient(to left, #333 30%, white );
 }
 
 .brinquedos {
+    width: 2400px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    overflow: auto;
-    min-height: 375px;
+    min-height: 360px;
     margin: 0 auto;
-    width: 95%;
-}
-
-.brinquedos::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
-}
-
-
-.brinquedos::-webkit-scrollbar {
-    height: 0;
-    background: #414141;
-    color: white;
-    border-radius: 10px;
-    background-size: calc(200% + 4rem);
 }
 
 .brinquedo {
@@ -70,11 +74,20 @@
     box-shadow: 1px 2px 12px #00000033;
     margin-left: 28px;
     cursor: pointer;
-    opacity: 0.8;
+    width: 230px;
 }
 
-.brinquedo-selecionado{
-    opacity: 1;
+.brinquedo__link{
+    color: black;
+}
+
+.brinquedo__titulo{
+    font-size: 1.4rem;
+    
+}
+
+.brinquedo:hover{
+    transform: scale(1.01);
 }
 
 .brinquedo:first-child {
@@ -84,9 +97,7 @@
 
 .brinquedo__img {
     width: 100%;
-    min-width: 200px;
-    max-width: 250px;
-    margin: 0 auto;
+    
 }
 
 .brinquedo__caracteristica {
@@ -100,6 +111,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.brinquedo__preco:before{
+    content: 'R$ ';
 }
 
 .brinquedo__preco {
@@ -128,43 +143,14 @@
 
 
 
-
-
-
-/* Aqui ao selecionar adionar uma classe para o modal de brinquedos ficar visivel */
-
-.modal__brinquedo {
-    display: none;
-}
-
-.modal__brinquedo.aberto {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    background: #000000aa;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.brinquedo__info{
-    background-color: #f1f1f1 ;
-    width: 400px;
-    height: 70vh;
-}
-
 .promocao-redirecionar{
     background: linear-gradient(#5a5a5a , #d1d1d1 15% ,#d1d1d1 85% , #5a5a5a);
     margin: 0 auto;
     display: flex;
     justify-content: center;
     padding: 0 8rem;
-
 }
 
 .promocao-redirecionar__imagem{
-    height: 400px;
+    height: 300px;
 }
