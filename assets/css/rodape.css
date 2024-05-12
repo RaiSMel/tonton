@@ -1,50 +1,85 @@
-.rodape{
+.rodape {
     background-color: #1a1a1a;
     color: #ccc;
     padding: 50px 5%;
     display: grid;
 }
 
-.text-gray{
+.text-gray {
     color: #ccc;
 }
 
-.sobre{
+.sobre {
     display: flex;
     margin: 0 auto;
     column-gap: 5%;
 }
 
-.sobre-descricao{
+.sobre-descricao {
     width: 35%;
 }
 
-.informacoes{
+.informacoes {
     justify-self: center;
     margin: 5rem 2rem;
     margin-bottom: 0;
 }
 
-.mapa{
+.mapa {
     width: 60%;
 }
 
-.informacoes-titulos{
+.informacoes-titulos {
     font-size: 3rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.contato{
+.contato {
     margin-right: 20px;
-    display: inline; 
+    display: inline;
 }
 
-.contatos-link{
+.contatos-link {
     text-decoration: none;
     color: #ccc;
 }
 
-.contatos-link:hover{
+.contatos-link:hover {
     text-decoration: underline 1px solid #ccc;
+}
+
+@media screen and (max-width: 800px) {
+
+    .sobre {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .sobre-descricao {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .informacoes-titulos {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .contatos {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        gap: 1rem;
+    }
+
+.contato {
+    margin-right: 0;
+}
+
 }

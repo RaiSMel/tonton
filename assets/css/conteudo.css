@@ -1,0 +1,145 @@
+/* Criação do zoom da imagem */
+
+
+.modal__brinquedo{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    background-color: #ffffffaa;
+}
+
+.modal__brinquedo.aberto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__imagem{
+    width: 60%;
+}
+
+/* criação dos brinquedos disponiveis na pagina */
+
+.slider {
+    width: 80%;
+    max-width: 1300px;
+    margin: 2rem auto;
+    gap: 5px;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.slider .brinquedo {
+    background: white;
+    border-radius: 10px !important;
+    box-shadow: 0 10px 16px -6px #121212;
+    color: black;
+    display: flex !important;
+    flex-direction: column;
+    height: 350px;
+    width: 200px !important;
+    justify-content: space-around;
+    max-width: 200px;
+    margin-left: 10%;
+    padding: 1rem;
+    row-gap: 5px;
+    text-align: center;
+}
+
+.slider .brinquedo .titulo {
+    font-size: 1.3rem;
+}
+
+.slider .brinquedo .tamanho {
+    color: gray;
+    font-size: .9rem;
+    margin: 0 auto;
+}
+
+.slider .brinquedo .precos {
+    display: flex;
+    gap: 1px;
+    margin: 0 auto;
+}
+
+.slider .brinquedo .preco {
+    color: #00aa00;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .2rem;
+    width: 88px;
+}
+
+.slider .brinquedo .preco.individual {
+    color: black;
+}
+
+.slider .brinquedo .adicionar {
+    color: #00cc00;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+.slider .brinquedo .adicionar:hover {
+    transform: scale(1.01);
+    font-weight: bold;
+}
+
+.slider .brinquedo .alugar {
+    color: white;
+    background: #00cc00;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+.slider .brinquedo .alugar:hover {
+    transform: scale(1.01);
+    font-weight: bold;
+}
+
+@media screen and (max-width:1240px) {
+
+    .slider .brinquedo {
+        width: 190px !important;
+        margin: 1rem;
+        margin-left: 5%;
+        max-width: none;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+
+    .slider .brinquedo {
+       margin-left: 12%;
+    }
+
+}
+
+@media screen and (max-width:610px) {
+    .modal__imagem{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .slider .brinquedo {
+        width: 80% !important;
+        height: 350px;
+        height: 400px;
+        margin: 0 auto ;
+    }
+
+    .slider .brinquedo .produto {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+}
+

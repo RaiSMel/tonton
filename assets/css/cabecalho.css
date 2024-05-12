@@ -1,58 +1,108 @@
-.cabecalho{
-    padding: 1rem 4rem;
-    background: #1a1a1a;
+.cabecalho {
+    align-items: center;
+    background: #1a1a1add;
+    column-gap: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
-    column-gap: 10px;
-    box-shadow: 6px 6px 10px 1px #a1a1a1  ;
-}
-
-.cabecalho__principal {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    padding: 1rem 4rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
 }
 
-.logo__img{
+.logo__img {
     height: 70px;
 }
 
-.pesquisar{
+.pesquisarBrinquedos {
+    height: 40px;
+    width: 40%;
+}
+
+.pesquisar {
+
     background-color: #f1f1f1;
-    width: 60%;
-    height: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
-    align-items: center;
+    height: 20px;
     justify-content: space-between;
     padding: .2rem .6rem;
+    padding-top: .5rem;
+    width: 100%;
+    margin: .5rem auto;
 }
-.pesquisar__entrada{
+
+.pesquisar__entrada {
+    font-size: 1rem;
     width: 92%;
     height: 90%;
 }
 
-.pesquisar__entrada, .pesquisar__botao{
+.pesquisar__entrada,
+.pesquisar__botao {
     outline: none;
     border: none;
     background-color: #f1f1f1;
-    transition: .5s ease-in-out ;
+    transition: .5s ease-in-out;
 }
 
-.pesquisar__botao:hover{
+.pesquisar__botao:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.menu{
+
+.semDisplay {
+    display: none;
+}
+
+.contedor {
+    height: 75px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.menu {
     display: flex;
     gap: 1.5rem;
     margin-right: 10px;
+
 }
 
-.itens-link{
+.itens-link {
     color: white;
     font-size: 1rem;
 }
+
+.menu__itens:hover {
+    transform: scale(1.05);
+}
+
+.carrinho {
+    position: relative;
+    --valor-quantidade-brinquedos: "0";
+}
+
+.carrinho:after {
+    display: flex;
+    content: var(--valor-quantidade-brinquedos);
+    position: absolute;
+    z-index: 5;
+    color: white;
+    background: green;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(calc(50% - 10px), -13px);
+    top: -15px;
+}
+
+

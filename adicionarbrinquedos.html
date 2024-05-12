@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar brinquedos</title>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+</head>
+<body>
+
+    <form action="">
+        <label for="id">id</label>
+        <input type="text" name="id" id="id">
+        <label for="imagem-brinquedo">imagem do brinquedo</label>
+        <input type="file" name="imagem-brinquedo" id="imagem-brinquedo">
+        <label for="nome">nome do brinquedo</label>
+        <input type="text" name="nome" id="nome">
+        <label for="descricao">descrição</label>
+        <input type="text" name="descricao" id="descricao">
+        <label for="comprimento">comprimento</label>
+        <input type="text" name="comprimento" id="comprimento">
+        <label for="largura">largura</label>
+        <input type="text" name="largura" id="largura">
+        <label for="altura">altura</label>
+        <input type="text" name="altura" id="altura">
+        <label for="valor">valor</label>
+        <input type="text" name="valor" id="valor">
+        <input type="button" role="button" id="button">
+    </form>
+<script src="./assets/javascript/firestore.js"></script>
+</body>
+</html>

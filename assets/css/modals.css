@@ -1,4 +1,4 @@
-.conato__imagem{
+.contato__imagem{
     position: fixed;
     bottom: 3vh;
     left: .3vw;
@@ -8,6 +8,6 @@
     z-index: 2;
 }
 
-.conato__imagem:hover{
+.contato__imagem:hover{
     transform: scale(1.1);
 }

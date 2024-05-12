@@ -1,72 +1,130 @@
-.catalago{
+.catalago {
     width: 90%;
-    margin: 0 auto;
+    margin: 3rem auto;
 }
 
-.catalogo-completo{
+.titulo__principal {
+    margin-left: 2rem;
+}
+
+.catalogo-completo {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
-    width: 95%;
+    width: 90%;
+    max-width: 1400px;
+    gap: 2rem;
     margin: 0 auto;
 }
 
-.brinquedo {
-    background-color: #fff;
-    box-shadow: 1px 2px 12px #00000033;
-    cursor: pointer;
-    width: calc(20% - 10px);
-    margin-left: 10px;
-}
-
-.brinquedo:nth-child(5n + 1) {
-    margin-left: 0;
-}
-
-
-.brinquedo__img {
-    width: 90%;
-    margin: 5%;
-}
-
-.brinquedo__titulo{
-    margin: 0 10px;
-}
-
-.brinquedo__caracteristica {
-    margin: .5rem .2rem .5rem 1rem;
-    color: #193F54;
-    line-height: 16px;
-}
-
-.brinquedo__container {
+.catalogo-completo .brinquedo {
+    background: white;
+    border-radius: 10px;
+    color: black;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px 10px;
+    flex-direction: column;
+    height: 350px;
+    width: calc(20% - 3.6rem);
+    justify-content: space-around;
+    padding: 1rem;
+    row-gap: 5px;
+    text-align: center;
+    box-shadow: 4px 4px 3px #222;
 }
 
-.brinquedo__preco {
-    color: #57F520;
-    font-size: 1.6rem;
+
+.catalogo-completo .brinquedo .produto {
+    max-width: 230px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.catalogo-completo .brinquedo .titulo {
+    font-size: 1.3rem;
+}
+
+.catalogo-completo .brinquedo .tamanho {
+    color: gray;
+    font-size: .9rem;
+    margin: 0 auto;
+}
+
+.catalogo-completo .brinquedo .precos {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1px;
+    margin: 0 auto;
+}
+
+.catalogo-completo .brinquedo .preco {
+    color: #00aa00;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .2rem;
+    width: 83px;
+}
+
+.catalogo-completo .brinquedo .preco.individual {
+    color: black;
+}
+
+.catalogo-completo .brinquedo .adicionar {
+    color: #00cc00;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+.catalogo-completo .brinquedo .adicionar:hover {
+    transform: scale(1.01);
     font-weight: bold;
 }
 
-.brinquedo__botao {
-    border: none;
-    background: transparent;
-
-}
-
-.bi-plus-circle {
-    background: #57F520;
-    border-radius: 50%;
+.catalogo-completo .brinquedo .alugar {
     color: white;
-    stroke: 2px black;
-    transition: .3s all ease-in-out;
+    background: #00cc00;
+    border-radius: 20px;
+    padding: 0.5rem;
 }
 
-.bi-plus-circle:hover {
-    background: #48bd21;
+.catalogo-completo .brinquedo .alugar:hover {
+    transform: scale(1.01);
+    font-weight: bold;
 }
 
+@media screen and (max-width: 1460px) {
+    .catalogo-completo .brinquedo {
+        width: calc(25% - 3.6rem);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .catalogo-completo .brinquedo {
+        width: calc(33% - 3.2rem);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .catalogo-completo .brinquedo {
+        width: calc(50% - 3.0rem);
+    }
+
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    .catalogo-completo .brinquedo {
+        height: 377px;
+    }
+    .catalogo-completo .brinquedo .titulo {
+        font-size: 1rem;
+    }
+
+    .catalogo-completo .brinquedo .precos {
+        flex-flow: wrap;
+    }
+
+    .catalogo-completo .brinquedo .preco {
+        width: 100%;
+    }
+}
